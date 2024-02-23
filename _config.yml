@@ -1,6 +1,4 @@
-theme: jekyll-theme-minimal
-title: 3D Data Atlas
-domain: 3DAtlas.github.io
-url: https://3DAtlas.github.io
-baseurl: /ucla-data-science-center.github.io/
-description: The University of California (UC) Libraries 3D Scanning Data Atlas is a collaboration among librarians and library staff at UC Santa Cruz, UC Davis, UC Riverside, UC Los Angeles, UC San Francisco, and UC Berkeley. All participating libraries are part of the University of California 3D Data Common Knowledge Group (CKG). The goal of the atlas is to create a collection of 3D scanned reference objects using different 3D scanning technologies available at UC Libraries. 
+url: "" # the base hostname & protocol for your site, e.g. http://example.com
+baseurl: "" # the subpath of your site, e.g. /blog
+title: "academic" # the name of your site, e.g. ACME Corp.
+description: "a Jekyll theme for academia"
