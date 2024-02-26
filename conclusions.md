@@ -1,4 +1,0 @@
----
-layout: conclusions
-title: "Conclusions"
----
