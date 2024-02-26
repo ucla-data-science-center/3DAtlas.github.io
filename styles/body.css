@@ -12,7 +12,6 @@ body {
   
   body a:hover {
       color: #005587;
-    
     }
 
 ul {
@@ -23,7 +22,7 @@ ul {
     line-height: 1.5;
     width: 65%;
     margin-left:12.5%;
-    font-size: larger;
+    font-size: large;
     
 }
 
