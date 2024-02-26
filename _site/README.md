@@ -1,6 +1,6 @@
-# Project Title
+# UC 3D Data Atlas Site
+3D Atlas created and maintained by the UC Common Knowledge Group on 3D Data.
 
-UC 3D Data Atlas Website
 
 ## Description
 
@@ -8,10 +8,10 @@ The 3D Scanning Data Atlas provides qualitative, quantitative, and visual inform
 
 ## Acknowledgments
 
-UC Berkeley: Annalise Phillips (past CKG member)
-UCLA Acknowledges: Francesca Albrezzi, Bianca Badajos, Doug Daniels, Chris Gilman, and the Data Science Center.
-UCSC Acknowledges: Kristina Golubiewski-Davis, Joshua Tuthill, Dino Raphael, Nami Lee
-UCSF Acknowledges: Dylan Romero and Jenny Tai
-UCR Acknowledges:Brendon Wheeler, Alvaro Alvarez 
-3D Data Atlas is hosted through pointcloud.ucla.edu
+UC Berkeley: Annalise Phillips (past CKG member) <br>
+UCLA Acknowledges: Francesca Albrezzi, Bianca Badajos, Doug Daniels, Chris Gilman, and the Data Science Center.<br>
+UCSC Acknowledges: Kristina Golubiewski-Davis, Joshua Tuthill, Dino Raphael, Nami Lee<br>
+UCSF Acknowledges: Dylan Romero and Jenny Tai<br>
+UCR Acknowledges:Brendon Wheeler, Alvaro Alvarez <br><br>
+3D Data Atlas is hosted through pointcloud.ucla.edu<br>
 Funding for the 3D Scanning Data Atlas project was provided through a Librarians Association of the University of California (LAUC) Mini Grant.
