@@ -2,7 +2,7 @@ menu:
 - {name: 'Home', url: '/index'}
 - {name: 'Scans', url: '/scans'}
 - {name: 'Conclusions', url: '/conclusions'}
-- {name: 'Contribute', url: '/contact'}
+- {name: 'Contribute', url: '/contribute'}
 
 
 # people:

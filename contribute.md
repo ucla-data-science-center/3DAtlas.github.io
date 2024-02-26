@@ -1,4 +1,4 @@
 ---
-layout: contact
+layout: contribute
 title: "Contribute"
 ---
