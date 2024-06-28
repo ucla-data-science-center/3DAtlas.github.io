@@ -18,12 +18,12 @@ body {
 }
 
 body a {
-    color: hsl(206, 63%, 42%);
+    color: rgb(18 149 216);
     text-decoration: none;
 }
 
 body a:hover {
-    color: #005587;
+    color: rgb(0 85 129);
 }
 
 ul {
@@ -40,7 +40,7 @@ ul {
 }
 
 .descriptionhead {
-    color: #2774AE;
+    color: rgb(114 205 244);
     font-size: 30px;
     margin-bottom: 5px;
     font-weight: 500;
