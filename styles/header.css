@@ -3,7 +3,7 @@
   display: flex;
   flex-direction: row;
   justify-content: left;
-  background-color: #2774AE;
+  background-color: rgb(0 85 129);
   align-items: center;
   position: fixed;
   top: 40px;
@@ -20,7 +20,7 @@
   align-items: center;
   position: fixed;
   overflow: hidden;
-  background-color: #005587;
+  background-color: rgb(18 149 216);
   top: 0;
   left: 0;
   right: 0;
@@ -61,13 +61,13 @@ h1 {
 .navbar a:hover
  {
   color: white;
-  background-color: #2774AE;
+  background-color: rgb(0 85 129);
 }
 
 .navbar a:active
  {
   color: white;
-  background-color: #2774AE;
+  background-color: rgb(0 85 129);
 }
 
 /* .navbar .dropdown-content {
