@@ -65,11 +65,11 @@ ul {
 .grid-item .description {
     position: absolute;
     bottom: 0;
-    background: rgba(0, 0, 0, 0.5);
+    background: rgba(0, 0, 0, 0.696);
     color: white;
-    width: 100%;
+    width: 100;
     opacity: 0;
-    transition: opacity 0.3s;
+    transition: opacity 1s;
 }
 .grid-item:hover .description {
     opacity: 1;
