@@ -8,11 +8,13 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
-        href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap"
+        href="https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap"
         rel="stylesheet">
+
     <link rel="stylesheet" href="styles/header.css">
     <link rel="stylesheet" href="styles/body.css">
-    <link rel="stylesheet" href="styles/window.css">
+    <link rel="stylesheet" href="styles/scans.css">
+
 
     <link rel="shortcut icon" href="resources/globe.png">
 
@@ -23,10 +25,10 @@
         <span class="opt">
             <a href="index.html">Home</a>
         </span>
-        <span class="opt">
+        <span class="open">
             <a href="scans.html">Scans</a>
         </span>
-        <span>
+        <span class="opt">
             <a href="contribute.html">Contribute</a>
         </span>
     </header>
@@ -39,232 +41,69 @@
         <h1 class="title"> 3D Scanning Atlas </h1>
     </header>
 
+    <div class="scanpage">
+        <!-- <div class="description">
 
-    <div class="pagetxt">
-        <div class="description">
-
-
-            <h3 class="descriptionhead">Comparison of 3D scanners by object</h3>
-            The 3D Scanning Atlas is powered by the Potree Viewer and is hosted by UCLA. <br>
-            <br>
-            Below are the OBJs produced for each of the nine objects. Click the frame to open a new window.
-            <br>
-            <br>
-
-            <div class="carousel">
-                <div class="carousel-inner">
+            <h3 class="descriptionhead"> Atlas Viewer</h3> -->
 
 
-                    <div class="carousel-item">
-                        <div class="window">
-                            <a href="https://www.pointcloud.ucla.edu/3DAtlas/bolt.html">
-                                <iframe data-src="https://www.pointcloud.ucla.edu/3DAtlas/bolt.html" target="_parent"
-                                    scrolling="yes" seamless></iframe>
-                            </a>
-                            <b>
-                                <span class="l_text">
-                                    <a class="obj" href="https://www.pointcloud.ucla.edu/3DAtlas/bolt.html">
-                                        Stainless steel hex head screw </a>
-                                </span>
-                            </b>
+        <div class="window">
+            <div class="scannav">
+                <div class="navtitle"> Scans </div>
+                <div class="scanbtn">
+                    <button id="Bolt">Bolt</button>
 
-                        </div>
-                    </div>
-
-
-                    <div class="carousel-item">
-                        <div class="window">
-                            <a href="https://www.pointcloud.ucla.edu/3DAtlas/skull.html">
-                                <iframe data-src="https://www.pointcloud.ucla.edu/3DAtlas/skull.html" target="_parent"
-                                    scrolling="yes" seamless></iframe>
-                            </a>
-                            <b>
-                                <span class="l_text">
-                                    <a class="obj" href="https://www.pointcloud.ucla.edu/3DAtlas/skull.html">
-                                        Human skull model</a>
-                                </span>
-                            </b>
-
-                        </div>
-                    </div>
-
-
-                    <div class="carousel-item">
-                        <div class="window">
-                            <a href="https://www.pointcloud.ucla.edu/3DAtlas/fuzzydice.html">
-                                <iframe data-src="https://www.pointcloud.ucla.edu/3DAtlas/fuzzydice.html"
-                                    target="_parent" scrolling="yes" seamless></iframe>
-                            </a>
-                            <b>
-                                <span class="l_text">
-                                    <a class="obj" href="https://www.pointcloud.ucla.edu/3DAtlas/fuzzydice.html">
-                                        Fuzzy die</a>
-                                </span>
-                            </b>
-
-                        </div>
-                    </div>
-
-
-                    <div class="carousel-item">
-                        <div class="window">
-                            <a href="https://www.pointcloud.ucla.edu/3DAtlas/silverstar.html">
-                                <iframe data-src="https://www.pointcloud.ucla.edu/3DAtlas/silverstar.html"
-                                    target="_parent" scrolling="yes" seamless></iframe>
-                            </a>
-                            <b>
-                                <span class="l_text">
-                                    <a class="obj" href="https://www.pointcloud.ucla.edu/3DAtlas/silverstar.html">
-                                        Silver star ornament</a>
-                                </span>
-                            </b>
-
-                        </div>
-                    </div>
-
-
-                    <div class="carousel-item">
-                        <div class="window">
-                            <a href="https://www.pointcloud.ucla.edu/3DAtlas/blueglitterstar.html">
-                                <iframe data-src="https://www.pointcloud.ucla.edu/3DAtlas/blueglitterstar.html"
-                                    target="_parent" scrolling="yes" seamless></iframe>
-                            </a>
-                            <b>
-                                <span class="l_text">
-                                    <a class="obj" href="https://www.pointcloud.ucla.edu/3DAtlas/blueglitterstar.html">
-                                        Blue glitter star ornament </a>
-                                </span>
-                            </b>
-
-                        </div>
-                    </div>
-
-
-                    <div class="carousel-item">
-                        <div class="window">
-                            <a href="https://www.pointcloud.ucla.edu/3DAtlas/goldpresent.html">
-                                <iframe data-src="https://www.pointcloud.ucla.edu/3DAtlas/goldpresent.html"
-                                    target="_parent" scrolling="yes" seamless></iframe>
-                            </a>
-                            <b>
-                                <span class="l_text">
-                                    <a class="obj" href="https://www.pointcloud.ucla.edu/3DAtlas/goldpresent.html">
-                                        Gold christmas star ornament </a>
-                                </span>
-                            </b>
-
-                        </div>
-                    </div>
-
-
-                    <div class="carousel-item">
-                        <div class="window">
-                            <a href="https://www.pointcloud.ucla.edu/3DAtlas/bwpresent.html">
-                                <iframe data-src="https://www.pointcloud.ucla.edu/3DAtlas/bwpresent.html"
-                                    target="_parent" scrolling="yes" seamless></iframe>
-                            </a>
-                            <b>
-                                <span class="l_text">
-                                    <a class="obj" href="https://www.pointcloud.ucla.edu/3DAtlas/bwpresent.html">
-                                        Black & white Christmas box ornament</a>
-                                </span>
-                            </b>
-
-                        </div>
-                    </div>
-
-
-                    <div class="carousel-item">
-                        <div class="window">
-                            <a href="https://www.pointcloud.ucla.edu/3DAtlas/frostedknight.html">
-                                <iframe data-src="https://www.pointcloud.ucla.edu/3DAtlas/frostedknight.html"
-                                    target="_parent" scrolling="yes" seamless></iframe>
-                            </a>
-                            <b>
-                                <span class="l_text">
-                                    <a class="obj" href="https://www.pointcloud.ucla.edu/3DAtlas/frostedknight.html">Nut
-                                        Frosted glass chest piece</a>
-                                </span>
-                            </b>
-
-                        </div>
-                    </div>
-
-
-                    <div class="carousel-item">
-                        <div class="window">
-                            <a href="https://www.pointcloud.ucla.edu/3DAtlas/gaugetool.html">
-                                <iframe data-src="https://www.pointcloud.ucla.edu/3DAtlas/gaugetool.html"
-                                    target="_parent" scrolling="yes" seamless></iframe>
-                            </a>
-                            <b>
-                                <span class="l_text">
-                                    <a class="obj" href="https://www.pointcloud.ucla.edu/3DAtlas/gaugetool.html">Nut
-                                        bolt
-                                        thread
-                                        gauge</a>
-                                </span>
-                            </b>
-
-                        </div>
-                    </div>
-
-
-                    <div class="carousel-item">
-                        <div class="window">
-                            <a href="https://www.pointcloud.ucla.edu/3DAtlas/gaugetool.html">
-                                <iframe data-src="https://www.pointcloud.ucla.edu/3DAtlas/gaugetool.html"
-                                    target="_parent" scrolling="yes" seamless></iframe>
-                            </a>
-                            <b>
-                                <span class="l_text">
-                                    <a class="obj" href="https://www.pointcloud.ucla.edu/3DAtlas/gaugetool.html">Nut
-                                        bolt
-                                        thread
-                                        gauge</a>
-                                </span>
-                            </b>
-
-                        </div>
-                    </div>
-
-
-                    <div class="carousel-item">
-                        <div class="window">
-                            <a href="https://www.pointcloud.ucla.edu/3DAtlas/gaugetool.html">
-                                <iframe data-src="https://www.pointcloud.ucla.edu/3DAtlas/gaugetool.html"
-                                    target="_parent" scrolling="yes" seamless></iframe>
-                            </a>
-                            <b>
-                                <span class="l_text">
-                                    <a class="obj" href="https://www.pointcloud.ucla.edu/3DAtlas/gaugetool.html">Nut
-                                        bolt thread gauge</a>
-                                </span>
-                            </b>
-
-                        </div>
-                    </div>
-
-
-                    <!-- Add more items as needed -->
                 </div>
-                <div class="carousel-controls">
-                    <button class="carousel-button" onclick="prevSlide()">❮</button>
-                    <button class="carousel-button" onclick="nextSlide()">❯</button>
+                <div class="scanbtn">
+                    <button id="Skull">Skull</button>
+
                 </div>
+                <div class="scanbtn">
+                    <button id="BW">B&W Present</button>
+                </div>
+                <div class="scanbtn">
+                    <button id="Gold">Gold Present</button>
+                </div>
+                <div class="scanbtn">
+                    <button id="Blue">Blue Ornament</button>
 
+                </div>
+                <div class="scanbtn">
+                    <button id="Silver">Silver Ornament</button>
+                </div>
+                <div class="scanbtn">
+                    <button id="Fuzzy">Fuzzy Dice</button>
+                </div>
+                <div class="scanbtn">
+                    <button id="Frosted">Frosted Knight</button>
 
+                </div>
+                <div class="scanbtn">
+                    <button id="Gauge">Gauge</button>
+                </div>
+                <!-- .... -->
             </div>
-            <br>
-            <br>
+            <!-- CHANGING:  -->
+            <div class="viewer">
+                <div class="potree">
+                    <iframe class="frame" src="https://www.pointcloud.ucla.edu/3DAtlas/skull.html"></iframe>
+                </div>
+                <div class="scaninfo">
+                    <div class="objimgdiv">
+                        <img class="objimg" src="resources/skull.jpg">
+                    </div>
+                    <div class="infotext">
+                        <div class="info">Human skull model for capturing cavities and crevices</div>
+                        <div class="caption"> <i>The 3D Scanning Atlas is powered by Potree and is hosted by UCLA.</i></div>
+                    </div>
 
-            <h3 class="descriptionhead">Gallery</h3>
-
+                </div>
+            </div>
         </div>
-    </div>
 
-    <script src="/scripts/carousel.js"></script>
 
+        <!-- </div>
+    </div> -->
 </body>
 
 </html>

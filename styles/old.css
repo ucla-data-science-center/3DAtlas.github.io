@@ -1,0 +1,56 @@
+
+.objref {
+    width: 200px;
+}
+
+.window {
+    /* width: 20px; */
+    color: rgb(0, 0, 0);
+    /* padding: 20px; */
+    text-align: center;
+    /* transition: opacity 0.5s; */
+
+}
+/* 
+.window:hover {
+    opacity: 0.5;
+} */
+
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    gap: 10px;
+    align-items: center;
+    color: rgb(0 85 129);
+    /* opacity: 0; */
+
+}
+.grid-item {
+    position: relative;
+    text-align: center;
+    background-color: rgb(225, 225, 225);
+
+}
+
+.grid-item img {
+    width: 60%;
+    height: auto;
+    padding:5px;
+}
+
+.grid-item .description {
+    position: absolute;
+    bottom: 0;
+    /* background:  rgb(0 85 129); */
+    color: rgb(0 85 129);
+    opacity: 0;
+    transition: opacity 1s;
+}
+
+.grid-item:hover .description {
+    opacity: 1;
+}
+
+.grid-item:hover {
+    opacity: 1;
+}

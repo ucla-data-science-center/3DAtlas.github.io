@@ -1,0 +1,145 @@
+body {
+    background-color: rgb(243, 243, 243);
+}
+
+.scanpage {
+    /* position: relative; */
+    margin-top: 150px;
+    /* padding-top: 60px; */
+    margin-left: 2%;
+    margin-right: 2%;
+    /* background-color: rgb(243, 243, 243); */
+}
+
+
+.window {
+    border-radius: 10px;
+    width: 100%;
+    display: flex;
+    /* margin: auto; */
+    /* overflow: hidden; */
+    /* position: relative; */
+
+}
+
+.scannav {
+    /* background-color: white; */
+    justify-content: space-between;
+    display: flex;
+    flex-direction: column;
+    margin-right: 10px;
+    /* justify-content: start; */
+    /* align-items: stretch;     */
+    /* padding: 5px; */
+    
+}
+
+.viewer {
+    padding: 5px;
+    /* background-color: rgb(155, 150, 150); */
+    /* display: flex; */
+    width: 100%;
+}
+
+.navtitle {
+    text-align: left;
+    margin-top: 20px;
+    /* font-weight: bold; */
+    color: rgb(46, 46, 46);
+    font-weight: 400;
+    padding: 5px;
+
+}
+
+.scanbtn {
+    padding: 5px;
+    /* margin: auto; */
+    font-size: small;
+    color: white;
+    text-align: center;
+    width: 100%;
+
+}
+
+
+button {
+    background-color: rgb(255, 255, 255);
+    font-family: "Work Sans" !important;
+    border: none;
+    color: rgb(46, 46, 46);
+    border-radius: 4px;
+    cursor:pointer;
+    height: 50px;
+    min-width: 120px;
+    max-width: 150px;
+
+}
+
+button:hover {
+    background-color: rgb(10, 121, 176);
+    color: rgb(255, 255, 255);
+    transition: .3s;
+}
+
+.frame {
+    height: 450px;
+    width: 100%;
+    border: none;
+    border-radius: 10px;
+}
+
+.scaninfo {
+    display: flex;
+    margin: auto;
+    /* margin: auto; */
+    /* border-radius: 2px;
+    width: 100%;
+    padding: 5px;
+    display: flex; */
+    /* position: relative; */
+    /* flex: auto;
+    padding: 5px; */
+    /* background-color: rgb(124, 46, 46); */
+}
+
+
+.objimg {
+    width: 150px;
+    /* position: relative;  */
+    flex: auto;
+    border-radius: 2px;
+    margin: auto;
+
+}
+
+
+.infotext {
+    width: 100%;
+    /* display: flex; */
+    /* justify-content: space-between; */
+    flex-direction: column;
+
+    /* background-color: rgb(142, 11, 11); */
+}
+
+
+.info {
+    background-color: rgb(255, 255, 255);
+    padding-left: 10px;
+    padding: 52px;
+    margin: auto;
+    /* height: 130px; */
+    /* display: flex; */
+    /* height: 80%;
+    width: 100%; */
+}
+
+
+.caption {
+    text-align: right;
+    padding-top: 10px;
+    height: 20px;
+    /* display: flex; */
+    margin: auto;
+    font-size: smaller;
+}

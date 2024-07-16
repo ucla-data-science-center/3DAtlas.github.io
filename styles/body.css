@@ -44,33 +44,3 @@ ul {
     padding-bottom: 0;
 
 }
-
-.objref {
-    width: 200px;
-}
-
-.grid-container {
-    display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
-    gap: 10px;
-}
-.grid-item {
-    position: relative;
-    text-align: center;
-}
-.grid-item img {
-    width: 100%;
-    height: auto;
-}
-.grid-item .description {
-    position: absolute;
-    bottom: 0;
-    background: rgba(0, 0, 0, 0.696);
-    color: white;
-    width: 100;
-    opacity: 0;
-    transition: opacity 1s;
-}
-.grid-item:hover .description {
-    opacity: 1;
-}
