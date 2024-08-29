@@ -34,14 +34,15 @@ body {
     
 }
 
-.viewer {
+#viewer {
     padding: 5px;
     /* background-color: rgb(155, 150, 150); */
     /* display: flex; */
     width: 100%;
+    
 }
 
-.navtitle {
+#navtitle {
     text-align: left;
     margin-top: 20px;
     /* font-weight: bold; */
@@ -81,14 +82,14 @@ button:hover {
     transition: .3s;
 }
 
-.frame {
+#frame {
     height: 450px;
     width: 100%;
     border: none;
     border-radius: 10px;
 }
 
-.scaninfo {
+#scaninfo {
     display: flex;
     margin: auto;
     /* margin: auto; */
@@ -103,7 +104,7 @@ button:hover {
 }
 
 
-.objimg {
+#objimg {
     width: 150px;
     /* position: relative;  */
     flex: auto;
@@ -113,7 +114,7 @@ button:hover {
 }
 
 
-.infotext {
+#infotext {
     width: 100%;
     /* display: flex; */
     /* justify-content: space-between; */
@@ -123,7 +124,7 @@ button:hover {
 }
 
 
-.info {
+#info {
     background-color: rgb(255, 255, 255);
     padding-left: 10px;
     padding: 52px;
@@ -135,7 +136,7 @@ button:hover {
 }
 
 
-.caption {
+#caption {
     text-align: right;
     padding-top: 10px;
     height: 20px;
