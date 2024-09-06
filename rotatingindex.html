@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Home | 3D Scanning Atlas</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="styles/header.css">
+    <link rel="stylesheet" href="styles/body.css">
+
+    <style>
+        .description-container {
+            width: 100%;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .description {
+            width: 100%;
+            position: absolute;
+            left: 100%;
+            opacity: 0;
+            transition: all 0.5s ease;
+        }
+
+        .description.active {
+            left: 0;
+            opacity: 1;
+        }
+
+        .description.previous {
+            left: -100%;
+            opacity: 0;
+        }
+
+        #next-btn {
+            display: block;
+            margin: 20px auto;
+            padding: 10px 20px;
+            background-color: #0077b6;
+            color: white;
+            border: none;
+            cursor: pointer;
+        }
+
+        #next-btn:hover {
+            background-color: #005f8c;
+        }
+    </style>
+</head>
+
+<body>
+    <header class="navbar">
+        <span class="open">
+            <a href="index.html">Home</a>
+        </span>
+        <span class="opt">
+            <a href="scans.html">Scans</a>
+        </span>
+        <span class="opt">
+            <a href="contribute.html">Contribute</a>
+        </span>
+    </header>
+    <header class="titlerow">
+        <a href="index.html">
+            <figure class="icon">
+                <img src="resources/UCLogo.png" alt="UC Logo">
+            </figure>
+        </a>
+        <h1 class="title"> 3D Scanning Atlas </h1>
+    </header>
+
+    <div class="pagetxt">
+        <div class="description-container">
+
+            <!-- First description -->
+            <div class="description.active" id="description-1">
+                <h3 class="descriptionhead">Introduction</h3>
+                <div style="display: flex; flex-wrap: wrap;">
+                    <div style="flex: 1 1 50%">
+                        <p>
+                            The University of California (UC) Libraries 3D Scanning Atlas is a collaboration among
+                            librarians and library staff at UC Santa Cruz, UC Davis, UC Riverside, UC Los Angeles, UC
+                            San Francisco, and UC Berkeley. All participating libraries are part of the University of
+                            California 3D Data Common Knowledge Group (CKG).
+                            <br><br>
+                            The goal of the atlas is to create a collection of 3D scanned reference objects using
+                            different 3D scanning technologies available at UC Libraries.
+                        </p>
+                    </div>
+                    <div style="flex: 1 1 50%; text-align: center;">
+                        <figure>
+                            <img src="resources/Atlaslogo.png" width="400">
+                        </figure>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Second description -->
+            <div class="description" id="description-2">
+                <h3 class="descriptionhead">3D Scanners</h3>
+                <p>The 3D Data Atlas includes a range of 3D scanners currently available across UC Libraries.
+                    The following
+                    criteria were identified for comparing the 3D scanners: resolution; ability to capture
+                    transparency/semi-transparency, cavities, and reflectivity; time to 3D scan; and price.
+                </p>
+                <ul>
+                    <li>Artec Space Spider (UCLA)</li>
+                    <li>Canon 6D (UCSC)</li>
+                    <li>Einscan-SE (UCR)</li>
+                    <li>Einscan-SP (UCSF)</li>
+                    <li>Einscan Pro (UCB)</li>
+                </ul>
+            </div>
+
+            <!-- Third description -->
+            <div class="description" id="description-3">
+                <h3 class="descriptionhead">Scanning Process</h3>
+                <p>The 3D CKG members have a range of experience using 3D scanning technology. 3D CKG members agreed
+                    on the
+                    following process that would be beneficial for both novice and experts:</p>
+                <ul>
+                    <li>Use the 3D scanner manufacturer’s software to 3D scan whenever possible.</li>
+                    <li>Use default settings in 3D scanning software whenever possible.</li>
+                    <li>Follow manufacturer documentation rather than using personal knowledge about scanning.</li>
+                    <li>Export as both OBJ and STL whenever possible.</li>
+                </ul>
+            </div>
+
+            <!-- Fourth description -->
+            <div class="description" id="description-4">
+                <h3 class="descriptionhead">Conclusion</h3>
+                <p>We hope the 3D Scanning Atlas enables campus constituents to make informed decisions about which
+                    3D scanning option best fits their education and research needs and provides librarians and
+                    library staff with data to make informed purchases.</p>
+            </div>
+
+        </div>
+
+        <!-- Next button -->
+        <button id="next-btn">Next</button>
+
+    </div>
+
+    <script>
+        let currentDescription = 0;
+        const descriptions = document.querySelectorAll('.description');
+        const nextButton = document.getElementById('next-btn');
+        console.log(descriptions[currentDescription]);
+
+        nextButton.addEventListener('click', () => {
+            console.log(descriptions[currentDescription]);
+        
+            // Hide the current description by setting it to offscreen
+            descriptions[currentDescription].classList.remove('active');
+            descriptions[currentDescription].style.left = '-100%'; // Slide it out of view
+
+            // Move to the next description
+            currentDescription = (currentDescription + 1) % descriptions.length;
+
+            // Show the next description
+            descriptions[currentDescription].classList.add('active');
+            descriptions[currentDescription].style.left = '0'; // Slide it into view
+        });
+    </script>
+</body>
+
+</html>
