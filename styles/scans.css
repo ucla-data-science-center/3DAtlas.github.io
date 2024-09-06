@@ -3,12 +3,9 @@ body {
 }
 
 .scanpage {
-    /* position: relative; */
     margin-top: 150px;
-    /* padding-top: 60px; */
     margin-left: 2%;
     margin-right: 2%;
-    /* background-color: rgb(243, 243, 243); */
 }
 
 
@@ -16,60 +13,118 @@ body {
     border-radius: 10px;
     width: 100%;
     display: flex;
-    /* margin: auto; */
-    /* overflow: hidden; */
-    /* position: relative; */
-
+    flex-direction: row;
 }
 
 .scannav {
-    /* background-color: white; */
-    justify-content: space-between;
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     margin-right: 10px;
-    /* justify-content: start; */
-    /* align-items: stretch;     */
-    /* padding: 5px; */
-    
+    /* justify-content: space-between; */
+    flex-wrap: wrap;
 }
 
 #viewer {
     padding: 5px;
-    /* background-color: rgb(155, 150, 150); */
-    /* display: flex; */
+    display: flex;
+    width: 75%;
+    flex-direction: column;
+}
+
+
+#potree {
     width: 100%;
-    
+}
+
+#frame {
+    height: 450px;
+    width: 100%;
+    border: none;
+    border-radius: 10px;
+}
+
+
+#caption {
+    display: flex;
+    font-size: smaller;
+}
+
+#scaninfo {
+    border-radius: 2px;
+    padding: 5px;
+    display: flex;
+    flex-direction: column;
+    max-width: 20%;
+
+}
+
+#objimg {
+    width: 100%;
+    border-radius: 2px;
+
+    /* margin: auto; */
+
+}
+
+
+#infotext {
+    /* width: 100%; */
+    background-color: rgb(255, 255, 255);
+    border-radius: 2px;
+    /* justify-content: center; */
+    padding: 10px;
+}
+
+
+#info {
+    align-items: center;
+    padding: 30px;
+}
+
+
+#logo {
+    width: 20px;
 }
 
 #navtitle {
     text-align: left;
     margin-top: 20px;
-    /* font-weight: bold; */
+    max-width: 50px;
     color: rgb(46, 46, 46);
-    font-weight: 400;
+    font-weight: 700;
+    text-align: center;
     padding: 5px;
-
 }
+
+
 
 .scanbtn {
     padding: 5px;
-    /* margin: auto; */
     font-size: small;
     color: white;
-    text-align: center;
-    width: 100%;
+    margin-right: 3px;
+    flex: 1 1 calc(25% - 20px);
+    max-width: calc(25% - 20px);
+    flex: 1 1 100px;
+    min-width: 100px;
+    margin-bottom: 10px;
+}
 
+.clicked {
+    background-color: rgb(10, 121, 176);
+    color: rgb(255, 255, 255);
 }
 
 
 button {
+    width: 100%;
+    /* Make buttons take full width of their container */
     background-color: rgb(255, 255, 255);
     font-family: "Work Sans" !important;
     border: none;
     color: rgb(46, 46, 46);
     border-radius: 4px;
-    cursor:pointer;
+    cursor: pointer;
     height: 50px;
     min-width: 120px;
     max-width: 150px;
@@ -80,67 +135,4 @@ button:hover {
     background-color: rgb(10, 121, 176);
     color: rgb(255, 255, 255);
     transition: .3s;
-}
-
-#frame {
-    height: 450px;
-    width: 100%;
-    border: none;
-    border-radius: 10px;
-}
-
-#scaninfo {
-    display: flex;
-    margin: auto;
-    /* margin: auto; */
-    /* border-radius: 2px;
-    width: 100%;
-    padding: 5px;
-    display: flex; */
-    /* position: relative; */
-    /* flex: auto;
-    padding: 5px; */
-    /* background-color: rgb(124, 46, 46); */
-}
-
-
-#objimg {
-    width: 150px;
-    /* position: relative;  */
-    flex: auto;
-    border-radius: 2px;
-    margin: auto;
-
-}
-
-
-#infotext {
-    width: 100%;
-    /* display: flex; */
-    /* justify-content: space-between; */
-    flex-direction: column;
-
-    /* background-color: rgb(142, 11, 11); */
-}
-
-
-#info {
-    background-color: rgb(255, 255, 255);
-    padding-left: 10px;
-    padding: 52px;
-    margin: auto;
-    /* height: 130px; */
-    /* display: flex; */
-    /* height: 80%;
-    width: 100%; */
-}
-
-
-#caption {
-    text-align: right;
-    padding-top: 10px;
-    height: 20px;
-    /* display: flex; */
-    margin: auto;
-    font-size: smaller;
 }
