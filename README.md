@@ -1,4 +1,4 @@
-# UC 3D Data Atlas Site
+# UC 3D Scanning Atlas Site
 3D Atlas created and maintained by the UC Common Knowledge Group on 3D Data.
 
 

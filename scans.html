@@ -2,157 +2,134 @@
 <html lang="en">
 
 <head>
-    <title>Home | 3D Data Atlas</title>
+
+
+    <title>Home | 3D Scanning Atlas</title>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
 
-    <link rel="stylesheet" href="/styles/header.css">
-    <link rel="stylesheet" href="/styles/body.css">
-    <link rel="stylesheet" href="/styles/window.css">
-    <link rel="shortcut icon" href="/resources/globe.png">
-    <link rel="shortcut icon" href="/resources/globe.png">
+    <link rel="stylesheet" href="styles/header.css">
+    <link rel="stylesheet" href="styles/body.css">
+    <link rel="stylesheet" href="styles/scans.css">
+
+    <link rel="shortcut icon" href="resources/globe.png">
 
 </head>
 
 <body>
-    <header class="header">
-        <div>
-            <ul class="navbar">
-                <li><a href="contribute.html">Contribute</a></li>
-                <li class="dropdown">
-                    <a href="scans.html" class="dropbtn">Scans</a>
-                    <div class="dropdown-content">
-                        <!-- <a href="/scans.html/">Blue Glitter Star</a>
-                        <a href="/scans/">Skulls</a>
-                        <a href="/scans/">Gold star</a> -->
-                    </div>
-                </li>
-
-                <li><a href="index.html">About</a></li>
-            </ul>
-        </div>
-
-        <div class="titlerow">
-            <img src="/resources/globe.png" class="icon" alt="3D Data Atlas Icon">
-            <h1> 3D Scanning Atlas </h1>
-        </div>
-
+    <header class="navbar">
+        <span class="opt">
+            <a href="index.html">Home</a>
+        </span>
+        <span class="open">
+            <a href="scans.html">Scans</a>
+        </span>
+        <span class="opt">
+            <a href="contribute.html">Contribute</a>
+        </span>
+    </header>
+    <header class="titlerow">
+        <a href="index.html">
+            <figure class="icon">
+                <img src="resources/UCLogo.png" alt="UC Logo">
+            </figure>
+        </a>
+        <h1 class="title"> 3D Scanning Atlas </h1>
     </header>
 
-
-    <div class="scansbody">
-
-        <h3 class="descriptionhead">Comparison of 3D scanners by object</h3>
-        The 3D Scanning Data Atlas is powered by the Potree Viewer and is hosted by UCLA. <br>
-        See the figure below for
-        instructions on using the viewer.
-
-        <br> <br>
-        Below are the OBJs produced for each of the nine objects:
-
+    <div class="scanpage">
         <div class="window">
-
-            <span class="l_text"> Nut bolt thread gauge </span>
-            <span> <a class="l_link" href="http://pointcloud.ucla.edu/3DAtlas/gaugetool.html"> 
-                <i> Expand </i><img class="linkimg" src="/resources/link.svg"> </a>
-            </span>
-
-            <iframe src="http://pointcloud.ucla.edu/3DAtlas/gaugetool.html"  scrolling="yes" seamless></iframe>
+            <div id="scaninfo">
+                <div id="objimgdiv">
+                    <img id="objimg" src="resources/skull.jpg">
+                </div>
+                <div id="infotext">
+                    <div id="info">Human skull model for capturing cavities and crevices</div>
+                </div>
+                <div id="caption"> <i>The 3D Scanning Atlas is powered by Potree and is hosted by UCLA.</i>
+                </div>
+            </div>
+            <div id="viewer">
+                <div id="potree">
+                    <iframe id="frame" src="https://www.pointcloud.ucla.edu/3DAtlas/skull.html"></iframe>
+                </div>
+            </div>
 
         </div>
+        <div class="scannav">
+            <!-- <div id="navtitle"> <img id="logo" src="resources/Atlaslogo.png"> </div> -->
 
-
-        <div class="window">
-
-            <span class="l_text">Stainless steel hex head screw </span>
-            <span> <a class="l_link" href="http://pointcloud.ucla.edu/3DAtlas/bolt.html"> 
-                <i> Expand </i><img class="linkimg" src="/resources/link.svg"> </a>
-            </span>
-
-            <iframe src="http://pointcloud.ucla.edu/3DAtlas/bolt.html"  scrolling="yes" seamless></iframe>
-
-        </div>
-        
-        <div class="window">
-
-            <span class="l_text">Human skull model</span>
-            <span> <a class="l_link" href="http://pointcloud.ucla.edu/3DAtlas/skull.html"> 
-                <i> Expand </i><img class="linkimg" src="/resources/link.svg"> </a>
-            </span>
-
-            <iframe src="http://pointcloud.ucla.edu/3DAtlas/skull.html"  scrolling="yes" seamless></iframe>
-
-        </div>
-
-        <div class="window">
-
-            <span class="l_text">Fuzzy die</span>
-            <span> <a class="l_link" href="http://pointcloud.ucla.edu/3DAtlas/fuzzydice.html"> 
-                <i> Expand </i><img class="linkimg" src="/resources/link.svg"> </a>
-            </span>
-
-            <iframe src="http://pointcloud.ucla.edu/3DAtlas/fuzzydice.html"  scrolling="yes" seamless></iframe>
-
-        </div>
-
-        
-        <div class="window">
-
-            <span class="l_text">Silver star ornament</span>
-            <span> <a class="l_link" href="http://pointcloud.ucla.edu/3DAtlas/silverstar.html"> 
-                <i> Expand </i><img class="linkimg" src="/resources/link.svg"> </a>
-            </span>
-
-            <iframe src="http://pointcloud.ucla.edu/3DAtlas/silverstar.html"  scrolling="yes" seamless></iframe>
-
-        </div>
-
-
-        <div class="window">
-
-            <span class="l_text">Blue glitter star ornament</span>
-            <span> <a class="l_link" href="http://pointcloud.ucla.edu/3DAtlas/blueglitterstar.html"> 
-                <i> Expand </i><img class="linkimg" src="/resources/link.svg"> </a>
-            </span>
-
-            <iframe src="http://pointcloud.ucla.edu/3DAtlas/blueglitterstar.html"  scrolling="yes" seamless></iframe>
-
+            <div class="scanbtn">
+                <button id="Skull"
+                    onclick="changeContent('Skull', 'resources/skull.jpg', 'Human skull model for capturing cavities and crevices', 'https://www.pointcloud.ucla.edu/3DAtlas/skull.html')">Skull</button>
+            </div>
+            <div class="scanbtn">
+                <button id="BW"
+                    onclick="changeContent('BW', 'resources/checkeredpresent.jpg', 'Christmas box ornament, black/white, for capturing shine, cloth, and string', 'https://www.pointcloud.ucla.edu/3DAtlas/bwpresent.html')">B&W
+                    Present</button>
+            </div>
+            <div class="scanbtn">
+                <button id="Gold"
+                    onclick="changeContent('Gold', 'resources/goldpresent.jpg', 'Christmas box ornaments, gold, for capturing shine, cloth, and string', 'https://www.pointcloud.ucla.edu/3DAtlas/goldpresent.html')">Gold
+                    Present</button>
+            </div>
+            <div class="scanbtn">
+                <button id="Blue"
+                    onclick="changeContent('Blue', 'resources/blueglitterstar.jpg', 'Ornament, blue, for capturing multiple colors and shine', 'https://www.pointcloud.ucla.edu/3DAtlas/blueglitterstar.html')">Blue
+                    Glitter Star</button>
+            </div>
+            <div class="scanbtn">
+                <button id="Silver"
+                    onclick="changeContent('Silver', 'resources/silverstar.jpg', 'Ornament, silver, for capturing multiple colors and shine', 'https://www.pointcloud.ucla.edu/3DAtlas/silverstar.html')">Silver
+                    Star</button>
+            </div>
+            <div class="scanbtn">
+                <button id="Fuzzy"
+                    onclick="changeContent('Fuzzy', 'resources/fuzzydice.jpg', 'Fuzzy dice for capturing fuzzy texture', 'https://www.pointcloud.ucla.edu/3DAtlas/fuzzydice.html')">Fuzzy
+                    Dice</button>
+            </div>
+            <div class="scanbtn">
+                <button id="Frosted"
+                    onclick="changeContent('Frosted', 'resources/frostedknight.jpg', 'Chess piece for capturing frosted glass', 'https://www.pointcloud.ucla.edu/3DAtlas/frostedknight.html')">Frosted
+                    Knight</button>
+            </div>
+            <div class="scanbtn">
+                <button id="Gauge"
+                    onclick="changeContent('Gauge', 'resources/gauge.jpg', 'Nut bolt thread gauge for capturing measurement accuracy', 'https://www.pointcloud.ucla.edu/3DAtlas/gaugetool.html')">Gauge</button>
+            </div>
+            <div class="scanbtn">
+                <button id="Bolt"
+                    onclick="changeContent('Bolt', 'resources/mcmasternut.jpg', 'Stainless steel hex head screw for capturing measurement accuracy and shine', 'https://www.pointcloud.ucla.edu/3DAtlas/bolt.html')">Bolt</button>
+            </div>
         </div>
 
-        <div class="window">
+        <script>
+            function changeContent(id, imgSrc, infoText, frameSrc) {
+                console.log("test");
+                document.getElementById('objimg').src = imgSrc;
+                document.getElementById('info').textContent = infoText;
+                document.getElementById('frame').src = frameSrc;
 
-            <span class="l_text">Gold Christmas box ornament</span>
-            <span> <a class="l_link" href="http://pointcloud.ucla.edu/3DAtlas/goldpresent.html"> 
-                <i> Expand </i><img class="linkimg" src="/resources/link.svg"> </a>
-            </span>
 
-            <iframe src="http://pointcloud.ucla.edu/3DAtlas/goldpresent.html"  scrolling="yes" seamless></iframe>
+                // Remove the 'clicked' class from any previously clicked button
+                const buttons = document.querySelectorAll('.scanbtn button');
+                buttons.forEach(button => button.classList.remove('clicked'));
 
-        </div>
+                // Add the 'clicked' class to the clicked button
+                document.getElementById(id).classList.add('clicked');
+            }
 
-        <div class="window">
 
-            <span class="l_text">Black & white Christmas box ornament</span>
-            <span> <a class="l_link" href="http://pointcloud.ucla.edu/3DAtlas/bwpresent.html"> 
-                <i> Expand </i><img class="linkimg" src="/resources/link.svg"> </a>
-            </span>
 
-            <iframe src="http://pointcloud.ucla.edu/3DAtlas/bwpresent.html"  scrolling="yes" seamless></iframe>
 
-        </div>
 
-        <div class="window">
 
-            <span class="l_text">Frosted glass chess piece</span>
-            <span> <a class="l_link" href="http://pointcloud.ucla.edu/3DAtlas/frostedknight.html"> 
-                <i> Expand </i><img class="linkimg" src="/resources/link.svg"> </a>
-            </span>
 
-            <iframe src="http://pointcloud.ucla.edu/3DAtlas/frostedknight.html"  scrolling="yes" seamless></iframe>
-
-        </div>
-
-    </div>
+        </script>
 
 </body>
 

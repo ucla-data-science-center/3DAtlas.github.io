@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Home | 3D Scanning Atlas</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="styles/header.css">
+    <link rel="stylesheet" href="styles/body.css">
+    <link rel="stylesheet" href="styles/window.css">
+
+    <link rel="shortcut icon" href="resources/globe.png">
+    <style>
+        .carousel {
+            width: 90%;
+            /* height: 100%; */
+            margin: auto;
+            overflow: hidden;
+            position: relative;
+            display: flex;
+        }
+
+        .carousel-inner {
+            display: flex;
+            transition: transform 0.5s ease;
+        }
+
+        .carousel-item {
+            width: 100%;
+            display: flex;
+            flex: 0 0 100%;
+            box-sizing: border-box;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .carousel-controls {
+            position: absolute;
+            top: 75%;
+            width: 100%;
+            display: flex;
+            justify-content: space-between;
+            transform: translateY(-50%);
+        }
+
+        .carousel-button {
+            /* background-color: rgba(0, 0, 0, 0.5); */
+            border: none;
+            color: rgb(18 149 216);
+            padding: 10px;
+            cursor: pointer;
+        }
+
+        iframe {
+            height: 500px;
+            width: 100%
+        }
+
+
+        .window {
+            width: 100%;
+            /* height: 100%; */
+            margin: auto;
+            /* height: 150%; */
+        }
+    </style>
+</head>
+
+<body>
+    <header class="navbar">
+        <span>
+            <a class="opt" href="index.html">Home</a>
+        </span>
+        <span>
+            <a class="open" href="scans.html">Scans</a>
+        </span>
+        <span>
+            <a class="opt" href="contribute.html">Contribute</a>
+        </span>
+    </header>
+    <header class="titlerow">
+        <a href="index.html">
+            <figure class="icon">
+                <img src="resources/UCLogo.png" alt="UC Logo">
+            </figure>
+        </a>
+        <h1 class="title"> 3D Scanning Atlas </h1>
+    </header>
+
+
+    The 3D Scanning Atlas is powered by the Potree Viewer and is hosted by UCLA. <br>
+    <iframe src="https://www.pointcloud.ucla.edu/3DAtlas/fuzzydice.html">Fuzzy die</iframe>
+
+
+    
+    <div class="viewer">
+        <div class="grid-container">
+            <div class="grid-item">
+                <a href="https://www.pointcloud.ucla.edu/3DAtlas/gaugetool.html">
+                <img class="objref" src="resources/gauge.jpg">
+                <div class="description">Nut bolt thread gauge for capturing measurement accuracy</div>
+            </a>
+            </div>
+            <div class="grid-item">
+                <a href="https://www.pointcloud.ucla.edu/3DAtlas/bolt.html">
+                <img class="objref" src="resources/mcmasternut.jpg">
+                <div class="description">Stainless steel hex head screw for capturing measurement accuracy and
+                    shine</div>         
+                </a>
+                    
+            </div>
+            <div class="grid-item">
+                <img class="objref" src="resources/skull.jpg">
+                <div class="description">Human skull model for capturing cavities and crevices </div>
+            </div>
+
+            <div class="grid-item">
+                <img class="objref" src="resources/fuzzydice.jpg">
+                <div class="description">Fuzzy dice for capturing fuzzy texture </div>
+            </div>
+            <div class="grid-item">
+                <img class="objref" src="resources/silverstar.jpg">
+
+                <div class="description">Ornaments (silver and blue) for capturing multiple colors and shine
+                </div>
+            </div>
+            <div class="grid-item">
+
+                <img class="objref" src="resources/blueglitterstar.jpg">
+                <div class="description">Ornaments (silver and blue) for capturing multiple colors and shine
+                </div>
+            </div>
+
+
+            <div class="grid-item">
+                <img class="objref" src="resources/goldpresent.jpg">
+                <div class="description">Christmas box ornaments (gold and black/white) for capturing shine,
+                    cloth,
+                    and string</div>
+            </div>
+
+
+            <div class="grid-item">
+                <img class="objref" src="resources/checkeredpresent.jpg">
+                <div class="description">Christmas box ornaments (gold and black/white) for capturing shine,
+                    cloth,
+                    and string</div>
+            </div>
+
+            <div class="grid-item">
+                <img class="objref" src="resources/frostedknight.jpg">
+                <div class="description">Chess piece for capturing frosted glass </div>
+            </div>
+
