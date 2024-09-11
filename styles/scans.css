@@ -27,8 +27,8 @@ body {
 #viewer {
     padding: 5px;
     display: flex;
-    width: 75%;
-    flex-direction: column;
+    width: 100%;
+    flex-direction: row;
 }
 
 
@@ -37,7 +37,7 @@ body {
 }
 
 #frame {
-    height: 450px;
+    height: 600px;
     width: 100%;
     border: none;
     border-radius: 10px;
